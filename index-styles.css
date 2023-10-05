@@ -1,5 +1,6 @@
 html{
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body{
@@ -8,6 +9,7 @@ body{
   background-color: #050505;
   display: grid;
   grid-template-rows: repeat(19,1fr);
+  height: 100%;
 }
 
 .navbarPart{
@@ -20,7 +22,6 @@ body{
 
 .elementHolder{
   padding-left: 70px;
-  margin-top: 10px;
 }
 
 .navbarElement{
@@ -120,4 +121,54 @@ body{
   text-align: center;
   align-self: center;
   font-family: 'Poppins', sans-serif;
+}
+
+.socialIconsBottom{
+  display: none;
+  grid-column: 1/3;
+  text-align: center;
+}
+
+.bar {
+  width: 100vw;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 22px 0;
+  transition: 0.4s;
+}
+
+
+@media (max-width: 675px) {
+  body{
+    padding-bottom: 30px;
+  }
+  .navbarPart{
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    justify-items: start;
+    align-items: center;
+  }
+  .socialIcons{
+    display: none;
+  }
+  .elementHolder{
+    grid-column: 2/3;
+    padding-left: 50px;
+    justify-self: center;
+  }
+  .navLogo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: right;
+  }
+  .socialIconsBottom{
+    display: block;
+    grid-column: 1/3;
+    text-align: center;
+  }
+  .navbarElementText{
+    font-size: 13px;
+  }
 }
