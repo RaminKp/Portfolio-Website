@@ -1,64 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Ramin Kupaei</title>
-  <link rel="icon" type="image/png" href="images/logo.png">
-  <link rel="stylesheet" href="index-styles.css">
+  <meta name="description" content="Ramin Kupaei builds and studies social robots that help children learn. MSc Computer Science at the University of Northern British Columbia.">
+  <meta property="og:title" content="Ramin Kupaei">
+  <meta property="og:description" content="I build robots that kids actually want to play with.">
+  <meta name="theme-color" content="#f3f6f4">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div class="navbarPart">
-    <ul class="elementHolder">
-      <li class="navbarElement"><a href="#home" class="navbarElementText active">About Me</a></li>
-      <li class="navbarElement"><a href="projects.html" class="navbarElementText">Projects</a></li>
-    </ul>
-    <a href="index.html" class="navLogo"><img src="images/logo.png" alt="" class="navLogo"></a>
-    <div class="socialIcons">
-      <a href="https://www.linkedin.com/in/ramin-kupaei/"><img src="images/linkedin-logo.png" alt=""
-          class="socialIconsImg"></a>
-      <a href="https://github.com/RaminKp"><img src="images/github-logo.png" alt="" class="socialIconsImg"></a>
-      <a href="mailto:r.kupaei@gmail.com"><img src="images/gmail-logo.png" alt="" class="socialIconsImg"></a>
-    </div>
-  </div>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <div class="mainPart">
-    <div class="imgPart">
-      <img src="images/my-pic.png" alt="" class="myImage">
-    </div>
-    <div class="textsAndButtons">
-      <p class="headerText">
-        I'm Ramin Kupaei
-      </p>
-      <p class="littleExp">
-       MSc Computer Science Student at UNBC
-      </p>
-      <p class="fullExp">
-        I am a self taught web developer with experience building websites for small businesses and startups. Currently, I am studying computer science at UNBC focusing on Robotics. Our goal is to make people's lives easier though programming social robots. My passion
-        is to create efficient and beautiful apps and websites and It's my honor to work with you. 🙋🏻‍♂️
-      </p>
-      <a href="mailto:r.kupaei@gmail.com"  class="getInTouch">
-        <button  class="getInTouch">
-          Get in Touch!
-        </button>
+  <nav class="nav" id="nav" aria-label="Main">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Ramin Kupaei, back to top">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="3.6" r="2.6" style="fill: var(--coral)"></circle>
+          <rect x="15" y="5" width="2" height="3" style="fill: var(--ink)"></rect>
+          <rect x="2" y="7.5" width="28" height="22" rx="8" style="fill: var(--ink)"></rect>
+          <rect x="9" y="14" width="4.2" height="7.5" rx="2.1" style="fill: var(--marigold)"></rect>
+          <rect x="18.8" y="14" width="4.2" height="7.5" rx="2.1" style="fill: var(--marigold)"></rect>
+        </svg>
+        Ramin Kupaei
       </a>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#papers">Papers</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#archive">Archive</a></li>
+        <li class="keep"><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch to dark theme">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2v2.2M12 19.8V22M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2 12h2.2M19.8 12H22M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"></path></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z"></path></svg>
+      </button>
     </div>
-    <div class="socialIconsBottom">
-      <div class="bar"></div>
-      <a href="https://www.linkedin.com/in/ramin-kupaei/"><img src="images/linkedin-logo.png" alt=""
-          class="socialIconsImg"></a>
-      <a href="https://github.com/RaminKp"><img src="images/github-logo.png" alt="" class="socialIconsImg"></a>
-      <a href="mailto:r.kupaei@gmail.com"><img src="images/gmail-logo.png" alt="" class="socialIconsImg"></a>
-    </div>
-  </div>
+  </nav>
 
-  <script src="index-js.js"></script>
+  <main id="main">
+    <!-- ============ Hero ============ -->
+    <header class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="hello">Hi, I'm Ramin Kupaei.</p>
+          <h1>I build robots that kids actually want to play with.</h1>
+          <p class="lede">I'm an MSc Computer Science student at the University of Northern British Columbia. I design, program and study social robots that help children learn, and I test them in the places kids spend their days: summer camps and elementary schools.</p>
+          <div class="cta">
+            <a class="btn primary" href="mailto:r.kupaei@gmail.com">Email me</a>
+            <a class="btn" href="#work">See my work</a>
+          </div>
+        </div>
+
+        <figure class="bot">
+          <p class="bubble" id="bubble" aria-live="polite">Hi! I'm the house robot. Poke my screen.</p>
+          <button class="bot-btn" id="botBtn" type="button" aria-label="Poke the robot to hear what it says">
+            <svg class="bot-svg" id="botSvg" viewBox="0 0 320 330" data-mood="idle" aria-hidden="true">
+              <line class="bot-antenna" x1="160" y1="46" x2="160" y2="20"></line>
+              <circle class="bot-bulb" cx="160" cy="15" r="10"></circle>
+              <rect class="bot-shell" x="22" y="44" width="276" height="198" rx="62"></rect>
+              <rect class="bot-screen" x="50" y="72" width="220" height="142" rx="42"></rect>
+              <g class="eyes" id="eyes">
+                <g class="eye eye-l" transform="translate(116 134)">
+                  <rect class="e-open" x="-17" y="-25" width="34" height="50" rx="17"></rect>
+                  <path class="e-happy" d="M-20 7 Q0 -19 20 7"></path>
+                  <circle class="e-wow" r="21"></circle>
+                  <path class="e-line" d="M-18 0 H18"></path>
+                </g>
+                <g class="eye eye-r" transform="translate(204 134)">
+                  <rect class="e-open" x="-17" y="-25" width="34" height="50" rx="17"></rect>
+                  <path class="e-happy" d="M-20 7 Q0 -19 20 7"></path>
+                  <circle class="e-wow" r="21"></circle>
+                  <path class="e-line" d="M-18 0 H18"></path>
+                </g>
+                <path class="mouth m-smile" d="M146 186 Q160 195 174 186"></path>
+                <path class="mouth m-big" d="M138 182 Q160 204 182 182"></path>
+                <circle class="m-o" cx="160" cy="190" r="8"></circle>
+              </g>
+              <circle class="cheek" cx="82" cy="184" r="10"></circle>
+              <circle class="cheek" cx="238" cy="184" r="10"></circle>
+              <rect class="bot-neck" x="130" y="240" width="60" height="20"></rect>
+              <rect class="bot-body" x="66" y="256" width="188" height="72" rx="24"></rect>
+              <svg class="aruco" data-id="42" x="137" y="269" width="46" height="46" viewBox="0 0 8 8"></svg>
+            </svg>
+          </button>
+          <figcaption class="bot-hint">Click or tap the robot. It has opinions.</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <!-- ============ Now ============ -->
+    <div class="wrap">
+      <section class="now" aria-label="What I'm doing right now">
+        <p class="now-label"><span class="pulse" aria-hidden="true"></span>Right now</p>
+        <ul>
+          <li><strong>Writing my thesis</strong> on social robots in education, with a defence planned for early 2027.</li>
+          <li><strong>Two papers under review</strong>, on tangible robot games and on speech recognition for kids.</li>
+          <li><strong>Running my last study</strong>, where educators rate answers from on-device language models.</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- ============ Work ============ -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Selected work</h2>
+          <p>Four studies, three robots, one thesis. Most of it happened in summer camps and classrooms with real kids.</p>
+        </div>
+
+        <div class="work-list">
+          <article class="work">
+            <div class="art art-lanyard" aria-hidden="true">
+              <svg class="strap" viewBox="0 0 400 300" preserveAspectRatio="none"><path d="M120 -10 L192 120"></path><path d="M280 -10 L208 120"></path></svg>
+              <div class="badge">
+                <svg class="aruco" data-id="7" viewBox="0 0 8 8"></svg>
+                <span>CAMPER 07</span>
+              </div>
+            </div>
+            <div class="work-body">
+              <p class="work-meta"><span class="status published">Published at HRI '26</span><span>2025</span></p>
+              <h3>A robot that runs camp games on its own</h3>
+              <p>I led development of a fully autonomous QTrobot system for seven UNBC Active Minds summer camps. Kids signed in by showing the ArUco marker on their lanyard, then played ten learning games with the robot while the researchers stayed out of the room. Everything ran offline: ROS for speech and motion, Django for the games, and a local language model for conversation. About 150 children aged 6 to 12 took part.</p>
+              <ul class="chips"><li>QTrobot</li><li>ROS</li><li>Django</li><li>OpenCV</li><li>Local LLM</li></ul>
+              <a class="more" href="https://www.unbc.ca/our-stories/story/researchers-study-how-children-interact-robots-real-world-classroom" target="_blank" rel="noopener">Read the UNBC story</a>
+            </div>
+          </article>
+
+          <article class="work">
+            <div class="art art-tangram" aria-hidden="true">
+              <svg viewBox="0 0 200 200">
+                <polygon class="slot" points="100,100 150,50 150,150"></polygon>
+                <polygon points="0,0 200,0 100,100" style="fill: var(--sky)"></polygon>
+                <polygon points="0,0 100,100 0,200" style="fill: var(--coral)"></polygon>
+                <polygon points="200,100 200,200 100,200" style="fill: var(--marigold)"></polygon>
+                <polygon points="100,100 150,150 100,200 50,150" style="fill: var(--pine)"></polygon>
+                <polygon points="150,50 200,0 200,100 150,150" style="fill: var(--ink)"></polygon>
+                <polygon points="0,200 50,150 100,200" style="fill: var(--sky)"></polygon>
+                <polygon class="floating" points="100,100 150,50 150,150" style="fill: var(--coral)"></polygon>
+              </svg>
+            </div>
+            <div class="work-body">
+              <p class="work-meta"><span class="status review">Under review</span><span>2026</span></p>
+              <h3>Screen-free games with two robots</h3>
+              <p>For the follow-up study, our team swapped the touchscreen for things kids can pick up. We built five tangible games, hosted by a Misty II and a Reachy Mini. I led the team, built Tangram Quest from scratch, and wired up the Raspberry Pi game boards with RFID readers, capacitive touch and light-up buttons. A camera reads ArUco-tagged pieces and a local Llama model gives hints. The robots ran across two months of summer camps, and I coded hours of video with a custom behaviour codebook in BORIS.</p>
+              <ul class="chips"><li>Misty II</li><li>Reachy Mini</li><li>Raspberry Pi</li><li>RFID</li><li>OpenCV</li><li>Ollama</li><li>BORIS</li></ul>
+            </div>
+          </article>
+
+          <article class="work">
+            <div class="art art-asr" aria-hidden="true">
+              <div class="wave" id="wave"></div>
+              <div class="transcript">
+                <div><b>Said</b><span>my dog likes to dig in the garden</span></div>
+                <div><b>Heard</b><span>my dog likes to dig in the <mark>garbage</mark></span></div>
+              </div>
+              <span class="art-note">Illustration</span>
+            </div>
+            <div class="work-body">
+              <p class="work-meta"><span class="status review">Under review</span><span>2026</span></p>
+              <h3>How well do robots hear kids?</h3>
+              <p>Most speech recognizers are built for adult voices. I ran a QTrobot fully offline in an elementary school over twelve session days and recorded 110 children aged 6 to 12 repeating words, repeating sentences and telling stories. Then I compared six offline speech recognizers, from Whisper variants to NVIDIA's Parakeet, against the robot's built-in decoder using word and character error rates.</p>
+              <ul class="chips"><li>QTrobot</li><li>Whisper</li><li>Vosk</li><li>Parakeet</li><li>Python</li></ul>
+            </div>
+          </article>
+
+          <article class="work">
+            <div class="art art-llm" aria-hidden="true">
+              <p class="q">Why do leaves change colour in the fall?</p>
+              <div class="a"><span>Model A</span><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+              <div class="a"><span>Model B</span><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></div>
+              <div class="a"><span>Model C</span><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+              <span class="art-note">Illustration</span>
+            </div>
+            <div class="work-body">
+              <p class="work-meta"><span class="status progress">In progress</span><span>2026</span></p>
+              <h3>Which small LLM should a classroom robot use?</h3>
+              <p>My last thesis study. Educators send in curriculum questions with their own reference answers. Five open models small enough to run on a robot answer them, and the educators rate each anonymized answer for accuracy, clarity, age-appropriateness, teaching value and safety. The goal is a practical answer to which model belongs on a robot in front of children.</p>
+              <ul class="chips"><li>On-device LLMs</li><li>Ollama</li><li>Survey design</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Papers & press ============ -->
+    <section class="section" id="papers">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Papers and press</h2>
+          <p>My first paper went to the main conference in human-robot interaction. More are on the way.</p>
+        </div>
+        <div class="papers">
+          <article class="cite">
+            <p class="work-meta"><span class="status published">Published</span><span>2026</span></p>
+            <h3>Social Robots on the Loose: Supporting Children's Independent Learning in the Wild</h3>
+            <p class="authors"><b>Ramin Kupaei</b>, Piyush Daryanani, Anupriya Shaju, Muhammad Alfatih Olaniyan, Gerardo Chavez Castaneda, Shruti Chandra</p>
+            <p class="venue">HRI '26, the 21st ACM/IEEE International Conference on Human-Robot Interaction. Edinburgh, March 2026.</p>
+            <p class="note">Three more manuscripts from my thesis are under review or in preparation.</p>
+          </article>
+          <ul class="press">
+            <li>
+              <span class="src">UNBC, July 2026</span>
+              <a href="https://www.unbc.ca/our-stories/story/researchers-study-how-children-interact-robots-real-world-classroom" target="_blank" rel="noopener">Researchers study how children interact with robots in real-world classroom</a>
+              <blockquote>"Through this research, I was able to connect with researchers from all over the world."</blockquote>
+            </li>
+            <li>
+              <span class="src">CKPG Today, July 2026</span>
+              <a href="https://ckpgtoday.ca/2026/07/31/unbc-research-explores-social-robots-supports-learning/" target="_blank" rel="noopener">UNBC research explores social robots</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Lessons ============ -->
+    <section class="section" id="lessons">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>What kids taught me about robots</h2>
+          <p>Lessons from putting robots in front of a few hundred children.</p>
+        </div>
+        <div class="lessons">
+          <div class="lesson">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><polygon points="4,34 36,34 20,6" style="fill: var(--coral)"></polygon></svg>
+            <div>
+              <h3>Seven minutes goes fast.</h3>
+              <p>Our 2025 camp sessions often ended right as kids were getting into a game. Longer turns and more robots are now part of the plan.</p>
+            </div>
+          </div>
+          <div class="lesson">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="9" y="9" width="22" height="22" transform="rotate(45 20 20)" style="fill: var(--marigold)"></rect></svg>
+            <div>
+              <h3>Little kids want a teammate.</h3>
+              <p>83% of 6 to 8 year-olds felt they were playing with a partner. Only 45% of 9 to 12 year-olds said the same.</p>
+            </div>
+          </div>
+          <div class="lesson">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><polygon points="4,30 16,10 36,10 24,30" style="fill: var(--sky)"></polygon></svg>
+            <div>
+              <h3>Noticing beats talking.</h3>
+              <p>When a kid places the right piece and the robot misses it, nothing the robot says next can fix the moment. Reliable sensing comes first.</p>
+            </div>
+          </div>
+          <div class="lesson">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><polygon points="6,6 34,34 6,34" style="fill: var(--pine)"></polygon></svg>
+            <div>
+              <h3>Consent is a project too.</h3>
+              <p>Families have questions, and some prefer paper forms. Meeting parents early saves a last-minute scramble on day one.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="about">
+          <figure class="portrait">
+            <div class="frame"><img src="images/ramin.webp" alt="Ramin Kupaei" width="500" height="500" loading="lazy"></div>
+            <svg class="tri" viewBox="0 0 40 40" aria-hidden="true"><polygon points="2,38 38,38 38,2" style="fill: var(--coral)"></polygon></svg>
+            <figcaption>Based in Prince George, BC</figcaption>
+          </figure>
+          <div>
+            <div class="section-head">
+              <h2>About me</h2>
+            </div>
+            <div class="bio">
+              <p>I started out as a self-taught web developer building sites for small businesses and startups. I studied computer engineering in Tehran, then started my MSc in Computer Science at UNBC in 2025.</p>
+              <p>Today I work on NORTHERN-STARS (Social, Tailored, and Assistive Robots for Schools) with Dr. Shruti Chandra. We co-design social robots with educators and test them with children where they actually learn. Outside the lab, I'm a residence assistant in UNBC housing and a director of the Northern BC Graduate Students' Society.</p>
+            </div>
+          </div>
+        </div>
+
+        <ol class="timeline" reversed>
+          <li>
+            <span class="when">2025 – now</span>
+            <span class="what">MSc Computer Science <span class="where">University of Northern British Columbia</span></span>
+            <span class="desc">Manuscript-based thesis on social robots for children's learning, supervised by Dr. Shruti Chandra. Defence planned for early 2027.</span>
+          </li>
+          <li>
+            <span class="when">2025 – now</span>
+            <span class="what">Research Assistant <span class="where">NORTHERN-STARS, UNBC</span></span>
+            <span class="desc">Robot software, game design, field studies with children, ethics applications and data analysis.</span>
+          </li>
+          <li>
+            <span class="when">2025 – now</span>
+            <span class="what">Residence Assistant <span class="where">UNBC Housing</span></span>
+            <span class="desc">Floor programs, resident support and on-call shifts.</span>
+          </li>
+          <li>
+            <span class="when">2025 – now</span>
+            <span class="what">Director <span class="where">Northern BC Graduate Students' Society</span></span>
+            <span class="desc">Started as an administrative assistant and joined the board. Events, advocacy and the grad student food program.</span>
+          </li>
+          <li>
+            <span class="when">2024</span>
+            <span class="what">System Administrator Intern <span class="where">Vip-Host, Tehran</span></span>
+            <span class="desc">Looked after Linux and Windows servers and client accounts.</span>
+          </li>
+          <li>
+            <span class="when">2020 – 2024</span>
+            <span class="what">BSc Computer Engineering <span class="where">Islamic Azad University, Tehran</span></span>
+          </li>
+          <li>
+            <span class="when">Earlier</span>
+            <span class="what">Freelance web developer</span>
+            <span class="desc">Websites for small businesses and startups. Some of them are in the archive below.</span>
+          </li>
+        </ol>
+
+        <div class="toolbox">
+          <div>
+            <h3>What I build with</h3>
+            <ul class="chips">
+              <li>Python</li><li>ROS</li><li>Django</li><li>JavaScript</li><li>HTML &amp; CSS</li><li>OpenCV</li><li>Raspberry Pi</li><li>Linux</li><li>Ollama</li><li>Whisper &amp; Vosk</li>
+            </ul>
+          </div>
+          <div>
+            <h3>How I do research</h3>
+            <ul class="chips">
+              <li>Field studies with children</li><li>Behavioural coding in BORIS</li><li>Interviews &amp; questionnaires</li><li>Mixed-effects models</li><li>Research ethics</li><li>LaTeX</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Archive ============ -->
+    <section class="section" id="archive">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Before the robots</h2>
+          <p>I started out building websites. These are a few early projects, kept here for nostalgia.</p>
+        </div>
+        <div class="archive">
+          <article class="old">
+            <a class="thumb" href="https://github.com/RaminKp/Tip-Calculator" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="images/archive/tip-calculator.webp" alt="" width="800" height="400" loading="lazy"></a>
+            <h3>Tip Calculator</h3>
+            <p>Splits a bill and works out the tip per person.</p>
+            <a class="code" href="https://github.com/RaminKp/Tip-Calculator" target="_blank" rel="noopener">View code on GitHub</a>
+          </article>
+          <article class="old">
+            <a class="thumb" href="https://github.com/RaminKp/Space-Tourism-Website" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="images/archive/space-tourism.webp" alt="" width="800" height="400" loading="lazy"></a>
+            <h3>Space Tourism</h3>
+            <p>A multi-page site for a made-up space travel company: destinations, crew and tech.</p>
+            <a class="code" href="https://github.com/RaminKp/Space-Tourism-Website" target="_blank" rel="noopener">View code on GitHub</a>
+          </article>
+          <article class="old">
+            <a class="thumb" href="https://github.com/RaminKp/Rating-System-Project" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="images/archive/rating-system.webp" alt="" width="800" height="400" loading="lazy"></a>
+            <h3>Rating System</h3>
+            <p>A small interactive component for collecting ratings and feedback.</p>
+            <a class="code" href="https://github.com/RaminKp/Rating-System-Project" target="_blank" rel="noopener">View code on GitHub</a>
+          </article>
+          <article class="old">
+            <a class="thumb" href="https://github.com/RaminKp/FAQ-responsive" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="images/archive/faq-accordion.webp" alt="" width="800" height="400" loading="lazy"></a>
+            <h3>FAQ Accordion</h3>
+            <p>A responsive FAQ section that opens and closes each answer.</p>
+            <a class="code" href="https://github.com/RaminKp/FAQ-responsive" target="_blank" rel="noopener">View code on GitHub</a>
+          </article>
+          <article class="old">
+            <a class="thumb" href="https://github.com/RaminKp/Web-Generation-Sample-Website" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="images/archive/web-generation.webp" alt="" width="800" height="400" loading="lazy"></a>
+            <h3>Web Generation</h3>
+            <p>A demo homepage for a Persian web design studio.</p>
+            <a class="code" href="https://github.com/RaminKp/Web-Generation-Sample-Website" target="_blank" rel="noopener">View code on GitHub</a>
+          </article>
+          <article class="old">
+            <a class="thumb" href="https://github.com/RaminKp/drum-kit-simulator" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="images/archive/drum-kit.webp" alt="" width="800" height="400" loading="lazy"></a>
+            <h3>Drum Kit</h3>
+            <p>Play a drum kit with your keyboard or mouse.</p>
+            <a class="code" href="https://github.com/RaminKp/drum-kit-simulator" target="_blank" rel="noopener">View code on GitHub</a>
+          </article>
+          <article class="old">
+            <a class="thumb" href="https://github.com/RaminKp/TinDogRemake" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="images/archive/tindog.webp" alt="" width="800" height="400" loading="lazy"></a>
+            <h3>TinDog Remake</h3>
+            <p>A responsive remake of the old TinDog landing page in plain HTML and CSS.</p>
+            <a class="code" href="https://github.com/RaminKp/TinDogRemake" target="_blank" rel="noopener">View code on GitHub</a>
+          </article>
+          <article class="old">
+            <a class="thumb" href="https://github.com/RaminKp/The-Dicee-Game" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="images/archive/dice-game.webp" alt="" width="800" height="400" loading="lazy"></a>
+            <h3>Dice Game</h3>
+            <p>Two players, two dice, refresh to see who wins.</p>
+            <a class="code" href="https://github.com/RaminKp/The-Dicee-Game" target="_blank" rel="noopener">View code on GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="contact-card">
+          <div>
+            <h2>Let's talk robots.</h2>
+            <p>Research, collaborations, a robot that needs a game, or a website that needs a refresh. My inbox is open.</p>
+          </div>
+          <div class="contact-links">
+            <div class="email-row">
+              <a class="email" href="mailto:r.kupaei@gmail.com">r.kupaei@gmail.com</a>
+              <button class="copy" id="copyBtn" type="button">Copy</button>
+            </div>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/ramin-kupaei/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com/RaminKp" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span>© <span id="year">2026</span> Ramin Kupaei</span>
+    <span>Made in Prince George, BC. The robot up top works for free.</span>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
-
 </html>
